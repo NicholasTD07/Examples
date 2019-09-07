@@ -8,7 +8,7 @@ bundix:
 	nix-shell -p bundix --run "bundix"
 
 shell:
-	NIX_PATH=channel:nixos-19.03 nix-shell -v
+	NIX_PATH=channel:nixos-19.03 nix-shell -v --run ""
 
 working-shell:
-	nix-shell -v # this works
+	nix-shell -v --run "" # this works

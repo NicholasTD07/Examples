@@ -15,8 +15,8 @@ install:
   - make install-nix
   - source ~/.nix-profile/etc/profile.d/nix.sh
 script:
-  - make shell
-  - make working-shell
+  - make working-shell # success first
+  - make shell # fail later
 
 before_cache:
   - mkdir -p $HOME/nix.store
