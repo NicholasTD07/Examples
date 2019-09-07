@@ -1,3 +1,6 @@
+install-nix:
+	curl https://nixos.org/nix/install | sh
+
 bundle:
 	nix-shell -p bundler --run "bundle"
 
